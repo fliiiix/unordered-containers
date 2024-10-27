@@ -55,7 +55,7 @@ arbitraryHash = do
 moreCollisions :: Int -> Int
 moreCollisions w = fromIntegral (w .&. mask)
 
-mask :: Int
+mask :: Int64
 mask = sum [bit n | n <- [0, 3, 8, 14, 61]]
 
 keyToInt :: Key -> Int
